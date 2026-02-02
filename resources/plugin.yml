@@ -1,0 +1,21 @@
+name: CoinCash
+version: 1.0.0
+main: com.foxsrv.cash.Cash
+api-version: 1.20
+author: foxsrv
+description: Plugin para compra/venda de itens usando Coin API
+
+commands:
+  coin:
+    description: Comando principal do CoinCash
+    usage: /<command> <buy|sell|id|reload>
+    permission: coincash.user
+    permission-message: Você não tem permissão para usar este comando.
+
+permissions:
+  coincash.user:
+    description: Permissão para usar comandos básicos
+    default: true
+  coincash.admin:
+    description: Permissão para comandos administrativos
+    default: op
